@@ -21,6 +21,19 @@ sido probado con ninguna distribución.
    `etiqueta` para confirmar que la impresora, la orientación y las
    dimensiones funcionan correctamente antes de iniciar el programa.
 
+> **Observación:** Si la impresora ya estaba instalada y durante la prueba de
+> impresión se utilizó la impresora que Windows registró como
+> `Munbyn ITPP941P (Copiar 1)`, actualiza la constante
+> `PREFERRED_LABEL_PRINTER` en
+> [`printer_label.py`](./printer-script/printer_label.py) para que coincida
+> exactamente con ese nombre:
+>
+> ```python
+> PREFERRED_LABEL_PRINTER = "Munbyn ITPP941P (Copiar 1)"
+> ```
+>
+> El nombre debe ser igual al que aparece en **Impresoras y escáneres**.
+
 En Windows es obligatorio tener instalado **PDF24 Creator**, ya que el script
 lo utiliza junto con Ghostscript para ajustar el PDF al tamaño físico de
 50 × 20 mm antes de enviarlo a la impresora.
