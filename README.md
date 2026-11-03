@@ -5,6 +5,12 @@ etiquetas, para generar e imprimir etiquetas de 5 centímetros de ancho por
 2 centímetros de alto en Windows y macOS. El soporte para Linux todavía no ha
 sido probado con ninguna distribución.
 
+## IMPORTANTE: es necesario tener conexión a internet
+
+**El programa necesita una conexión a internet activa para comunicarse con AWS
+SQS, recibir los mensajes y procesar las etiquetas. Sin conexión, el consumidor
+no podrá recibir ni imprimir nuevas etiquetas.**
+
 ## 1. Preparar y configurar la impresora en Windows
 
 1. Descarga e instala los controladores de la impresora **Munbyn ITPP941P**
